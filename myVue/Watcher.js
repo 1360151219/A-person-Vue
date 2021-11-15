@@ -1,5 +1,6 @@
 import Dep from './Dep.js';
 export default class Watcher {
+    //每当有新数据的时候，创建一个Watcher来监听它
     /** 
     * vm: vue实例
     * key: data中的属性名

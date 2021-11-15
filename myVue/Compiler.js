@@ -80,7 +80,6 @@ export default class Compiler {
             let key = RegExp.$1.trim() // 返回匹配到的第⼀个字符串，去掉空格
             node.textContent = value.replace(reg, this.vm[key])
             new Watcher(this.vm, key, (newValue) => { // 创建watcher对象，当数据改
-
                 node.textContent = newValue
             })
         }
