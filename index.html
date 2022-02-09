@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Vue-demo</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="name" id="name">姓名：{{person.name}}</div>
+        <div class="age" id="name">年龄：{{person.age}}</div>
+        <button v-on:click="stopChange()">取消定时器变化</button>
+        <button @click="changeHTMLOrText()">改变文字</button>
+        <div v-html="html"></div>
+        <div v-text="text"></div>
+        <label>
+          监听v-model：{{inputContent}}
+          <input type="text" v-model="inputContent" />
+        </label>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js" type="module"></script>
+</html>
